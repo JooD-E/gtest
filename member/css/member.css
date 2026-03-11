@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+*, *:after, *:before {box-sizing: border-box;}
+a{text-decoration: none;}
+body {background: #E9F6FF;font-family: 'Noto Sans Kr';}
+
+
+#banner {background: url(../img/mem_ban.png) no-repeat 0 center;position:relative;width:100%; height:150px; background-size: cover;}
+
+.close {color:#fff;display: block;width:30px;font-size:20px;height:30px; line-height: 30px; background: #99999980; border: 0; border-radius: 100px;position:absolute;right:20px;top:40%;cursor:pointer;text-align: center;font-weight: bolder;}
+
+
+
+
+fieldset {margin-top:40px;}
+fieldset legend { text-align: center;font-size:2.5rem; color:#6C9CBE;font-weight: bold;margin-bottom:40px;}
+
+.mbox {display: flex; flex-direction: column; align-items: center;width:100%;}
+
+.mbox1 {display: flex; flex-direction: column; position:relative;margin-bottom: 15px;}
+
+.mbox1 >label {font-size:1.2rem; font-weight: bold;margin:13px 0; text-indent: 10px;}
+
+.mbox1 .u_email {margin-bottom:0;}
+
+.mbox1:first-child label {margin-top:0;}
+
+.mbox1> input {text-indent: 15px; border-radius: 5px; border:2px solid #6C9CBE; height:3rem; background: #E9F6FF; color:#000000;outline:none;}
+.mbox1> input:focus {border-color:#6C9CBE; box-shadow:0 0 5px #2f9be7;}
+
+.mbox1 div {text-align: right;height: 13px; line-height: 13px;font-size:13px;margin-bottom:15px;}
+
+.mbox1 .chk1 {width:70px; height: 2rem;position:absolute;right:5px;top:62px;background: #6C9CBE; border:0;border-radius: 8px; color: #fff;cursor: pointer;}
+
+.send .send1 {background: #6C9CBE; border:0;border-radius: 8px; color: #fff;
+                width:140px;height: 40px;margin: 40px 20px 40px 0; cursor: pointer;}
+.send1:last-child {margin-right:0;background: #6C9CBE80;}
+.send1:last-child:hover {background:#6c9cbe;}
+
+.mbox2 p {display:block; padding-top:1rem;}
+
+
+
+#banner {animation-name: fadeInLeft; animation-duration: 0.5s;}
+@keyframes fadeInLeft {0%{opacity: 0;transform: translateX(-20px);}
+100% {opacity: 1; transform: translateX(0);}}
+
+fieldset legend {animation-name: fadeInUp; animation-duration: 0.5s;}
+@keyframes fadeInUp {0% {opacity: 0; transform: translateY(20px);}
+        100%{opacity: 1; transform: translateY(0);}}
